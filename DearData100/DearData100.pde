@@ -68,7 +68,7 @@ void drawHeading() {
   fill(47, 58, 47);
   textAlign(LEFT);
   textSize(30);
-  text("WAHT I SEE", 40, 55);
+  text("WHAT I SEE", 40, 55);
   text("ON MY WALKS.", 40, 88);
 
   fill(120);
