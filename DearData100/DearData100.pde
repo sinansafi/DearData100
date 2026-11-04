@@ -1,3 +1,4 @@
+
 ArrayList<Observation> observations = new ArrayList<Observation>();
 Observation selected = null;
 
@@ -47,6 +48,14 @@ void loadData() {
   addObservation(18, "03-11-2026", "nature", "Plants growing beside wall");
   addObservation(19, "03-11-2026", "transport", "Car parked in driveway");
   addObservation(20, "03-11-2026", "animals", "Cat walking on pavement");
+
+  // NEW OBSERVATIONS
+
+  addObservation(21, "04-11-2026", "people", "Person pushing a shopping trolley");
+  addObservation(22, "04-11-2026", "nature", "Flowers growing beside pavement");
+  addObservation(23, "04-11-2026", "transport", "Delivery van parked outside a house");
+  addObservation(24, "04-11-2026", "animals", "Cat walking on grass with owner");
+  addObservation(25, "04-11-2026", "transport", "Bus driving on main road");
 }
 
 void addObservation(int id, String date, String category, String description) {
@@ -59,8 +68,8 @@ void drawHeading() {
   fill(47, 58, 47);
   textAlign(LEFT);
   textSize(30);
-  text("WALKING THROUGH", 40, 55);
-  text("THE ORDINARY.", 40, 88);
+  text("WAHT I SEE", 40, 55);
+  text("ON MY WALKS.", 40, 88);
 
   fill(120);
   textSize(13);
@@ -215,7 +224,8 @@ void drawSelected() {
 
   fill(60);
   textSize(12);
-  text(selected.description, 750, 580, 190, 45);
+  textAlign(LEFT, TOP);
+  text(selected.description, 750, 580, 190, 65);
 }
 
 // CLICK INTERACTION
